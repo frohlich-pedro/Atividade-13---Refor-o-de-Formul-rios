@@ -8,7 +8,7 @@ body {
 }
 
 .tudo {
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 5%;
     font-family: Comic Sans MS;
 }
@@ -20,6 +20,7 @@ body {
 #botao {
     font-family: Comic Sans MS;
     font-size: 115%;
+    background-color: #ddd;
 }
 
 .input {
