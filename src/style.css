@@ -1,0 +1,27 @@
+body {
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #ddd;
+}
+
+.tudo {
+    background-color: #fff;
+    padding: 5%;
+    font-family: Comic Sans MS;
+}
+
+.campos {
+    font-size: 115%;
+}
+
+#botao {
+    font-family: Comic Sans MS;
+    font-size: 115%;
+}
+
+.input {
+    width: 50%;
+}
