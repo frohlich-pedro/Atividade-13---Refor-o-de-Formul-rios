@@ -150,7 +150,7 @@ const validarFormulario = () => {
             throw "Interesses deve ser preenchido";
         }
     } catch (e) {
-        alert(`Erro: ${e}`);
+        alert(`ERRO: ${e}`);
         return;
     }
     
