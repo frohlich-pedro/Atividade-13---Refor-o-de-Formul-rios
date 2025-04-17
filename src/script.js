@@ -23,6 +23,8 @@ const validarFormulario = () => {
         const telefone = document.getElementById('telefone').value.trim();
         if (!telefone) {
             throw "Telefone deve ser preenchido";
+        } else if (telefone.length != 9) {
+            throw "Telefone deve ter 9 digitos";
         }
         
         const endereco = document.getElementById('endereco').value.trim();
@@ -43,6 +45,8 @@ const validarFormulario = () => {
         const cep = document.getElementById('cep').value.trim();
         if (!cep) {
             throw "CEP deve ser preenchido";
+        } else if (cep.length != 8) {
+            throw "Cep deve ter 8 digitos"
         }
         
         const pais = document.getElementById('pais').value.trim();
@@ -68,11 +72,15 @@ const validarFormulario = () => {
         const cpf = document.getElementById('cpf').value.trim();
         if (!cpf) {
             throw "CPF deve ser preenchido";
+        } else if (cpf.length != 11) {
+            throw "CPF deve ter 11 digitos";
         }
         
         const rg = document.getElementById('rg').value.trim();
         if (!rg) {
             throw "RG deve ser preenchido";
+        } else if (rg.length < 8 || rg.length > 14) {
+            throw "RG deve ter de 8 a 14 digitos";
         }
         
         const nacionalidade = document.getElementById('nacionalidade').value.trim();
@@ -93,6 +101,8 @@ const validarFormulario = () => {
         const filhos = document.getElementById('filhos').value.trim();
         if (!filhos) {
             throw "Filhos deve ser preenchido";
+        } else if (filhos < 0) {
+            throw "É impossível ter filhos negativos :/";
         }
         
         const empresa = document.getElementById('empresa').value.trim();
@@ -118,6 +128,10 @@ const validarFormulario = () => {
         const salario = document.getElementById('salario').value.trim();
         if (!salario) {
             throw "Salario deve ser preenchido";
+        } else if (salario < 0) {
+            throw "É impossível ter salário negativo :/"
+        } else if (salario < 1518) {
+            throw "Salário não pode ser menor que o mínimo"
         }
         
         const escolaridade = document.getElementById('escolaridade').value.trim();
